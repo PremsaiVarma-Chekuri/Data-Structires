@@ -8,8 +8,9 @@ int main(){
     int stack[n];
     int top = -1;
     void push(int i){
-        if(top==n){
-            printf("Stack Overflow");
+        printf("Top is %d\n",top);
+        if(top==n-1){
+            printf("Stack Overflow\n");
         }
         else{
             top++;
@@ -21,6 +22,7 @@ int main(){
     }
     push(9);
     push(5);
+    push(7);
     peak();
 
 }
